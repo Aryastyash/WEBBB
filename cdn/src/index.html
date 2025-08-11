@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap');
+  </style>
+  <title>kelompok3</title>
+</head>
+
+<body class="bg-zinc-900" style="font-family: 'Outfit', sans-serif;">
+  <div>
+
+    <!-- Navbar -->
+    <nav class="flex fixed items-center justify-between px-4 top-0 left-0 right-0 z-10 bg-transparent">
+      <!-- Logo -->
+      <div class="flex items-center h-12">
+        <img src="../images/kelompok3log.png" alt="logo" class="mt-13 sm:ml-8 lg:mt-0 h-30 w-auto">
+      </div>
+
+      <!-- Tengah -->
+      <div
+        class=" justify-center hidden lg:flex items-center mt-2 rounded-full absolute left-1/2 transform -translate-x-1/2 px-2 py-2 bg-white/10 backdrop-blur border border-gray-300/20">
+        <ul class="text-white text-xs font-bold flex gap-3 px-0 py-0">
+          <li class="hover:bg-white/20 transition-colors duration-200 rounded-full px-2 py-1">Home</li>
+          <li class="hover:bg-white/20 transition-colors duration-200 rounded-full px-2 py-1">Sekolah</li>
+          <li class="hover:bg-white/20 transition-colors duration-200 rounded-full px-2 py-1">Kelompok</li>
+          <li class="hover:bg-white/20 transition-colors duration-200 rounded-full px-2 py-1">Gallery</li>
+          <li class="hover:bg-white/20 transition-colors duration-200 rounded-full px-2 py-1">Contact</li>
+        </ul>
+      </div>
+      <div>
+        <button class="lg:hidden block fixed right-4 batten">
+          <img src="../images/hamburger.svg" alt="" class="h-12">
+        </button>
+      </div>
+    </nav>
+    <!-- Navbar hp -->
+    <div
+      class="text-white fixed text-xl font-bold mt-25 mx-5 gap-3 bg-black/70 rounded-3xl top-0 left-0 right-0 z-10 hidden PovHp">
+      <div class="py-5 text-center hover:bg-green-600/20 cursor-pointer ease-in duration-300">Home</div>
+      <div class="py-5 text-center hover:bg-green-600/20 cursor-pointer ease-in duration-300">Sekolah</div>
+      <div class="py-5 text-center hover:bg-green-600/20 cursor-pointer ease-in duration-300">Kelompok</div>
+      <div class="py-5 text-center hover:bg-green-600/20 cursor-pointer ease-in duration-300">Galerry</div>
+      <div class="py-5 text-center hover:bg-green-600/20 cursor-pointer ease-in duration-300">Contact</div>
+    </div>
+  </div>
+
+  <script>
+    const batten = document.querySelector('.batten');
+    const PovHp = document.querySelector('.PovHp');
+    const navbar = document.querySelector('nav');
+
+    batten.addEventListener('click', function () {
+      PovHp.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- panel -->
+  <div class="overflow-hidden bg-[url(../images/sulax.jpg)] bg-cover bg-center bg-no-repeat h-screen flex items-center">
+    <div
+      class="bg-gradient-to-r from-black/90 via-black/70 to-transparent w-screen h-screen pt-20 pl-8 sm:p-12 rounded-r-lg">
+      <div class="text-left ml-1 mt-13 sm:mt-30">
+        <div class="flex items-center space-x-2 mb-4">
+          <div class="bg-transparent border border-green-700 text-white font-bold px-3 py-1 rounded-sm text-sm">
+            Kelompok 3
+          </div>
+          <div class="text-white text-lg tracking-widest">
+            Informatika
+          </div>
+        </div>
+        <h1 class="text-white text-5xl font-extrabold leading-tight mb-4">
+          Website <br> Biodata Sekolah
+        </h1>
+        <div class="flex items-center space-x-4 text-gray-300 mb-6 text-sm">
+          <div>
+            Website | Kelompok 3 | Informatika
+          </div>
+          <div class="flex items-center space-x-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2z" />
+            </svg>
+            <span>2025</span>
+          </div>
+          <div class="flex items-center space-x-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>40%</span>
+          </div>
+        </div>
+        <p class="text-gray-300 mb-8 max-w-lg">
+          Website ini dirancang untuk memudahkan navigasi, memperjelas informasi, dan menunjukkan hasil kerja Kelompok 3
+          secara optimal.
+        </p>
+        <a href="#"
+          class="inline-block border border-green-700bg-transparent hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-full transition">
+          Lihat Website
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Deskripsi -->
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 my-50 sm:my-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+      <div class="mx-auto max-w-prose text-center">
+        <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl dark:text-white">
+          Deskripsi Singkat Tentang
+          <strong class="text-green-600"> Website </strong>
+          informatika
+        </h1>
+
+        <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed dark:text-gray-200">
+          Selamat datang di Website Kelompok 3!
+          Situs ini dibuat sebagai representasi digital dari kreativitas, kerja sama, dan semangat belajar anggota
+          Kelompok 3. Kami menghadirkan informasi seputar profile sekolah, profile anggota kelompok, aktivitas kelompok,
+          galeri dokumentasi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- profil kelompok -->
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+        <div>
+          <div class="max-w-lg md:max-w-none">
+            <h2 class="text-6xl font-bold text-white sm:text-3xl mb-2">
+              Profil Kelompok
+            </h2>
+
+            <p class=" text-white text-base/loose mb-6 opacity-50">
+              Halo! Kami Kelompok 3 yang merupakan salah satu kelompok dari kelas XII-2. Kami adalah kelompok berisi 6
+              otak penuh ide, 12 tangan siap bekerja dan satu tujuan untuk menyelesaikan tugas dengan baik! Kelompok ini
+              dipimpin oleh Panji Sulistyo dan anggota lainnya yaitu Raditya Arya, Hafizh Atha, Carlo Intono, Naura
+              Azralia dan Gumaisa Nur. Ayo cari tau lebih lanjut tentang anggota kelompok kami!
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <img src="../images/sma sula.jpg" class="rounded-3xl h-100 w-100 lg:ml-27" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Anggota Kelompok -->
+  <section class="mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-8">
+    <h2 class="text-5xl font-bold text-white mb-12 text-center">Anggota Kelompok</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-zinc-900 rounded-tl-3xl rounded-br-3xl p-6 flex flex-col justify-between border border-gray-700">
+        <div>
+          <div class="flex items-start gap-4 mb-4">
+            <img src="../images/newpanji.webp" alt="Raditya Arya" class="w-16 h-16 rounded-sm object-cover">
+            <div class="flex flex-col justify-center">
+              <h3 class="text-white text-2xl font-bold mb-1">Panji Sulistyo</h3>
+              <span class="text-gray-500 text-sm font-semibold">Ketua Kelompok</span>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+            Ketua kelompok yang memimpin dan mengkoordinasi seluruh anggota untuk menyelesaikan tugas dengan baik.
+          </p>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="bg-gray-500 p-3 rounded-lg">
+          </div>
+          <a href="#" class="text-xs text-white font-bold flex items-center gap-1 hover:text-green-600 transition">
+            Lihat Selengkapnya
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-zinc-900 rounded-tl-3xl rounded-br-3xl p-6 flex flex-col justify-between border border-gray-700">
+        <div>
+          <div class="flex items-start gap-4 mb-4">
+            <img src="../images/aryaap.webp" alt="Raditya Arya" class="w-16 h-16 rounded-sm object-cover">
+            <div class="flex flex-col justify-center">
+              <h3 class="text-white text-2xl font-bold mb-1">Raditya Arya</h3>
+              <span class="text-yellow-500 text-sm font-semibold">Developer</span>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+            Anggota yang bertanggung jawab dalam pengembangan dan pengujian website kelompok.
+          </p>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="bg-yellow-500 p-3 rounded-lg">
+          </div>
+          <a href="#" class="text-xs text-white font-bold flex items-center gap-1 hover:text-green-600 transition">
+            Lihat Selengkapnya
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-zinc-900 rounded-tl-3xl rounded-br-3xl p-6 flex flex-col justify-between border border-gray-700">
+        <div>
+          <div class="flex items-start gap-4 mb-4">
+            <img src="../images/attha.webp" alt="Hafizh Atha" class="w-16 h-16 rounded-sm object-cover">
+            <div class="flex flex-col justify-center">
+              <h3 class="text-white text-2xl font-bold mb-1">Hafizh Atha</h3>
+              <span class="text-green-500 text-sm font-semibold">Designer</span>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+            Anggota yang fokus pada desain dan estetika tampilan website kelompok.
+          </p>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="bg-green-600 p-3 rounded-lg">
+          </div>
+          <a href="#" class="text-xs text-white font-bold flex items-center gap-1 hover:text-green-600 transition">
+            Lihat Selengkapnya
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-zinc-900 rounded-tl-3xl rounded-br-3xl p-6 flex flex-col justify-between border border-gray-700">
+        <div>
+          <div class="flex items-start gap-4 mb-4">
+            <img src="../images/carlooo.webp" alt="Carlo Intono" class="w-16 h-16 rounded-sm object-cover">
+            <div class="flex flex-col justify-center">
+              <h3 class="text-white text-2xl font-bold mb-1">Carlo Intono</h3>
+              <span class="text-red-500 text-sm font-semibold">Content Manager</span>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+            Anggota yang mengelola konten dan dokumentasi website kelompok.
+          </p>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="bg-red-600 p-3 rounded-lg">
+          </div>
+          <a href="#" class="text-xs text-white font-bold flex items-center gap-1 hover:text-green-600 transition">
+            Lihat Selengkapnya
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-zinc-900 rounded-tl-3xl rounded-br-3xl p-6 flex flex-col justify-between border border-gray-700">
+        <div>
+          <div class="flex items-start gap-4 mb-4">
+            <img src="../images/naura.webp" alt="Naura Azralia" class="w-16 h-16 rounded-sm object-cover">
+            <div class="flex flex-col justify-center">
+              <h3 class="text-white text-2xl font-bold mb-1">Naura Azralia</h3>
+              <span class="text-pink-500 text-sm font-semibold">Quality Assurance</span>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+            Anggota yang bertanggung jawab atas pengujian dan validasi website kelompok.
+          </p>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="bg-pink-600 p-3 rounded-lg">
+          </div>
+          <a href="#" class="text-xs text-white font-bold flex items-center gap-1 hover:text-green-600 transition">
+            Lihat Selengkapnya
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-zinc-900 rounded-tl-3xl rounded-br-3xl p-6 flex flex-col justify-between border border-gray-700">
+        <div>
+          <div class="flex items-start gap-4 mb-4">
+            <img src="../images/gumaisa.webp" alt="Gumaisa Nur" class="w-16 h-16 rounded-sm object-cover">
+            <div class="flex flex-col justify-center">
+              <h3 class="text-white text-2xl font-bold mb-1">Gumaisa Nur</h3>
+              <span class="text-blue-500 text-sm font-semibold">Feature Developer</span>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+            Anggota yang berkontribusi dalam pengembangan fitur dan pemeliharaan website kelompok.
+          </p>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="bg-blue-600 p-3 rounded-lg">
+          </div>
+          <a href="#" class="text-xs text-white font-bold flex items-center gap-1 hover:text-green-600 transition">
+            Lihat Selengkapnya
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
